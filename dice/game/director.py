@@ -59,9 +59,11 @@ class Director:
             self (Director): An instance of Director.
         """
         print(f"\nYou rolled: {self.thrower.dice}")
-        print(f"Your score is: {self.score}")
         if self.thrower.can_throw():
+            print(f"Your score is: {self.score}")
             choice = input("Roll again? [y/n] ")
             self.keep_playing = (choice == "y")
         else:
+            print(f"Your score is: 0")
+            print("Better luck next time!")
             self.keep_playing = False
