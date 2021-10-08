@@ -1,4 +1,4 @@
-from game.thrower import Thrower
+from dice.game.thrower import Thrower
 
 class Director:
     """A code template for a person who directs the game. The responsibility of 

@@ -24,7 +24,6 @@ class Thrower:
         if self.dice.count(5) > 0 or self.dice.count(1) > 0:
             return True
         else:
-            self.dice.clear()
             return False
 
 
@@ -34,7 +33,7 @@ class Thrower:
 
     def throw_dice(self):
         self.dice.clear()
-        for i in range(5):
+        for x in range(5):
             x = random.randint(1,6)
             self.dice.append(x)
         self.num_throws += 1
